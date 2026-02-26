@@ -1,11 +1,11 @@
-package com.otc.api.dto;
+package com.otc.dto;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 
 import java.math.BigDecimal;
 
-public record CreateEcomPassRequest(
+public record CreateOneTimeCodeRequest(
         @NotNull Long customerId,
         @NotNull Long bankId,
         @NotNull BigDecimal availableLoanLimit,

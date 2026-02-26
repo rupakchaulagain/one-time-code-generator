@@ -1,6 +1,6 @@
-package com.otc.api;
+package com.otc.exception;
 
-import com.otc.service.EcomPassException;
+import com.otc.service.OneTimeCodeException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class ApiExceptionHandler {
 
-    @ExceptionHandler(EcomPassException.class)
-    public ProblemDetail handleBusiness(EcomPassException ex) {
+    @ExceptionHandler(OneTimeCodeException.class)
+    public ProblemDetail handleBusiness(OneTimeCodeException ex) {
         ProblemDetail pd = ProblemDetail.forStatus(HttpStatus.BAD_REQUEST);
-        pd.setTitle("EcomPass error");
+        pd.setTitle("OneTimeCode error");
         pd.setDetail(ex.getMessage());
         return pd;
     }

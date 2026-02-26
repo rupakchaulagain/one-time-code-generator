@@ -12,18 +12,18 @@ import java.time.Instant;
 @Getter
 @Setter
 @Entity
-@Table(name = "ecom_pass_detail",
+@Table(name = "one_time_code_detail",
         uniqueConstraints = {
-                @UniqueConstraint(name = "uk_ecom_pass_code", columnNames = {"code"}),
-                @UniqueConstraint(name = "uk_ecom_pass_code_formatted", columnNames = {"code_formatted"})
+                @UniqueConstraint(name = "uk_one_time_code", columnNames = {"code"}),
+                @UniqueConstraint(name = "uk_one_time_code_formatted", columnNames = {"code_formatted"})
         },
         indexes = {
-                @Index(name = "idx_ecom_pass_customer", columnList = "customer_id"),
-                @Index(name = "idx_ecom_pass_state", columnList = "state"),
-                @Index(name = "idx_ecom_pass_valid_to", columnList = "valid_to")
+                @Index(name = "idx_one_time_code_customer", columnList = "customer_id"),
+                @Index(name = "idx_one_time_code_state", columnList = "state"),
+                @Index(name = "idx_one_time_code_valid_to", columnList = "valid_to")
         }
 )
-public class EcomPassDetail {
+public class OneTimeCodeDetail {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -49,7 +49,7 @@ public class EcomPassDetail {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "state", nullable = false, length = 16)
-    private EcomPassState state = EcomPassState.CREATED;
+    private OneTimeCodeState state = OneTimeCodeState.CREATED;
 
     @Column(name = "valid_from", nullable = false)
     private Instant validFrom;

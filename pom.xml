@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.otc</groupId>
-  <artifactId>ecom-pass</artifactId>
+  <artifactId>one-time-code-generator</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>one-time-code</name>
   <description>One Time Code - One-time code generation with collision safety and state management</description>

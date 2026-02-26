@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.validation.annotation.Validated;
 
 @Validated
-@ConfigurationProperties(prefix = "ecompass.scheduler")
+@ConfigurationProperties(prefix = "otc.scheduler")
 public record SchedulerProperties(
         @Min(1000) long expirySweepMs
 ) {}

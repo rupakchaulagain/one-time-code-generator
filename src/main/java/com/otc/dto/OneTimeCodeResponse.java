@@ -1,16 +1,16 @@
-package com.otc.api.dto;
+package com.otc.dto;
 
-import com.otc.domain.EcomPassState;
+import com.otc.domain.OneTimeCodeState;
 
 import java.math.BigDecimal;
 import java.time.Instant;
 
-public record EcomPassResponse(
+public record OneTimeCodeResponse(
         Long id,
         String codeFormatted,
         BigDecimal availableLoanLimit,
         BigDecimal usedAmount,
-        EcomPassState state,
+        OneTimeCodeState state,
         Instant validFrom,
         Instant validTo,
         boolean active

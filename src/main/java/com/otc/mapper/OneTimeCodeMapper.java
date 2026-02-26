@@ -1,11 +1,11 @@
-package com.otc.api;
+package com.otc.mapper;
 
-import com.otc.api.dto.EcomPassResponse;
-import com.otc.domain.EcomPassDetail;
+import com.otc.dto.OneTimeCodeResponse;
+import com.otc.domain.OneTimeCodeDetail;
 
-public class EcomPassMapper {
-    public static EcomPassResponse toResponse(EcomPassDetail p) {
-        return new EcomPassResponse(
+public class OneTimeCodeMapper {
+    public static OneTimeCodeResponse toResponse(OneTimeCodeDetail p) {
+        return new OneTimeCodeResponse(
                 p.getId(),
                 p.getCodeFormatted(),
                 p.getAvailableLoanLimit(),

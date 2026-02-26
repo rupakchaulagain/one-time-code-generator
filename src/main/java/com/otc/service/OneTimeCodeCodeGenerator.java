@@ -1,18 +1,18 @@
 package com.otc.service;
 
-import com.otc.config.EcomPassCodeProperties;
+import com.otc.config.OneTimeCodeCodeProperties;
 import org.springframework.stereotype.Component;
 
 import java.security.SecureRandom;
 import java.util.List;
 
 @Component
-public class EcomPassCodeGenerator {
+public class OneTimeCodeCodeGenerator {
 
-    private final EcomPassCodeProperties props;
+    private final OneTimeCodeCodeProperties props;
     private final SecureRandom random = new SecureRandom();
 
-    public EcomPassCodeGenerator(EcomPassCodeProperties props) {
+    public OneTimeCodeCodeGenerator(OneTimeCodeCodeProperties props) {
         this.props = props;
     }
 

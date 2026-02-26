@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.validation.annotation.Validated;
 
 @Validated
-@ConfigurationProperties(prefix = "ecompass.expiry")
-public record EcomPassExpiryProperties(
+@ConfigurationProperties(prefix = "otc.expiry")
+public record OneTimeCodeExpiryProperties(
         @Min(1) long defaultMinutes
 ) {}

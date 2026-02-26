@@ -1,6 +1,6 @@
 package com.otc.domain;
 
-public enum EcomPassState {
+public enum OneTimeCodeState {
     CREATED,
     ACTIVE,
     USED,

@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:h2:mem:ecompass;DB_CLOSE_DELAY=-1;MODE=MySQL
+    url: jdbc:h2:mem:otc;DB_CLOSE_DELAY=-1;MODE=MySQL
     driverClassName: org.h2.Driver
     username: sa
     password:
@@ -18,12 +18,11 @@ spring:
       enabled: true
       path: /h2-console
 
-ecompass:
+otc:
   code:
-    # Example in wireframe: "FLOT P9X7 2KA3"
-    prefix: ECOM
+    prefix: FCODE
     separator: "-"
-    groups: [2, 2]     # group sizes for random segments
+    groups: [4, 4]     # group sizes for random segments
     alphabet: "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"  # removed ambiguous 0,O,1,I
     max-retries: 20
 

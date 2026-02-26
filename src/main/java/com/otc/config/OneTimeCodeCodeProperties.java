@@ -10,8 +10,8 @@ import org.springframework.validation.annotation.Validated;
 import java.util.List;
 
 @Validated
-@ConfigurationProperties(prefix = "ecompass.code")
-public record EcomPassCodeProperties(
+@ConfigurationProperties(prefix = "otc.code")
+public record OneTimeCodeCodeProperties(
         @NotBlank String prefix,
         @NotBlank String separator,
         @NotEmpty List<@Min(1) Integer> groups,
