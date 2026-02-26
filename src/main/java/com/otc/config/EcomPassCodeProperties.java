@@ -1,4 +1,4 @@
-package com.foneloan.ecompass.config;
+package com.otc.config;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;

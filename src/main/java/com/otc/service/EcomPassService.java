@@ -1,10 +1,10 @@
-package com.foneloan.ecompass.service;
+package com.otc.service;
 
-import com.foneloan.ecompass.config.EcomPassCodeProperties;
-import com.foneloan.ecompass.config.EcomPassExpiryProperties;
-import com.foneloan.ecompass.domain.EcomPassDetail;
-import com.foneloan.ecompass.domain.EcomPassState;
-import com.foneloan.ecompass.repo.EcomPassDetailRepository;
+import com.otc.config.EcomPassCodeProperties;
+import com.otc.config.EcomPassExpiryProperties;
+import com.otc.domain.EcomPassDetail;
+import com.otc.domain.EcomPassState;
+import com.otc.repo.EcomPassDetailRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;

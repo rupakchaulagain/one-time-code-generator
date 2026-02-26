@@ -1,6 +1,6 @@
-package com.foneloan.ecompass.api;
+package com.otc.api;
 
-import com.foneloan.ecompass.service.EcomPassException;
+import com.otc.service.EcomPassException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;

@@ -1,7 +1,7 @@
-package com.foneloan.ecompass.api;
+package com.otc.api;
 
-import com.foneloan.ecompass.api.dto.EcomPassResponse;
-import com.foneloan.ecompass.domain.EcomPassDetail;
+import com.otc.api.dto.EcomPassResponse;
+import com.otc.domain.EcomPassDetail;
 
 public class EcomPassMapper {
     public static EcomPassResponse toResponse(EcomPassDetail p) {

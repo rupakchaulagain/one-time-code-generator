@@ -1,4 +1,4 @@
-package com.foneloan.ecompass;
+package com.otc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,8 +6,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-public class EcomPassApplication {
+public class OneTimeCodeApplication {
     public static void main(String[] args) {
-        SpringApplication.run(EcomPassApplication.class, args);
+        SpringApplication.run(OneTimeCodeApplication.class, args);
     }
 }

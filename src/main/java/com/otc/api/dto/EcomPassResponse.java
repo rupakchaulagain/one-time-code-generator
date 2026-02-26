@@ -1,6 +1,6 @@
-package com.foneloan.ecompass.api.dto;
+package com.otc.api.dto;
 
-import com.foneloan.ecompass.domain.EcomPassState;
+import com.otc.domain.EcomPassState;
 
 import java.math.BigDecimal;
 import java.time.Instant;

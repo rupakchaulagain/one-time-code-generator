@@ -1,7 +1,7 @@
-package com.foneloan.ecompass.repo;
+package com.otc.repo;
 
-import com.foneloan.ecompass.domain.EcomPassDetail;
-import com.foneloan.ecompass.domain.EcomPassState;
+import com.otc.domain.EcomPassDetail;
+import com.otc.domain.EcomPassState;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.Instant;

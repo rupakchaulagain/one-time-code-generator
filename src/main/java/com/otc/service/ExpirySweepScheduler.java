@@ -1,7 +1,7 @@
-package com.foneloan.ecompass.service;
+package com.otc.service;
 
-import com.foneloan.ecompass.domain.EcomPassState;
-import com.foneloan.ecompass.repo.EcomPassDetailRepository;
+import com.otc.domain.EcomPassState;
+import com.otc.repo.EcomPassDetailRepository;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 

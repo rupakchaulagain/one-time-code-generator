@@ -1,6 +1,6 @@
-package com.foneloan.ecompass.service;
+package com.otc.service;
 
-import com.foneloan.ecompass.config.EcomPassCodeProperties;
+import com.otc.config.EcomPassCodeProperties;
 import org.springframework.stereotype.Component;
 
 import java.security.SecureRandom;

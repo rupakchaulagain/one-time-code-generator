@@ -1,4 +1,4 @@
-package com.foneloan.ecompass.api.dto;
+package com.otc.api.dto;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;

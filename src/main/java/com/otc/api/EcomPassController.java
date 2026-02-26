@@ -1,9 +1,9 @@
-package com.foneloan.ecompass.api;
+package com.otc.api;
 
-import com.foneloan.ecompass.api.dto.CreateEcomPassRequest;
-import com.foneloan.ecompass.api.dto.EcomPassResponse;
-import com.foneloan.ecompass.api.dto.UseEcomPassRequest;
-import com.foneloan.ecompass.service.EcomPassService;
+import com.otc.api.dto.CreateEcomPassRequest;
+import com.otc.api.dto.EcomPassResponse;
+import com.otc.api.dto.UseEcomPassRequest;
+import com.otc.service.EcomPassService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

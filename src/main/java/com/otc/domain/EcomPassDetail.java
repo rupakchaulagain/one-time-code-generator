@@ -1,4 +1,4 @@
-package com.foneloan.ecompass.domain;
+package com.otc.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;

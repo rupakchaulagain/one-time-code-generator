@@ -1,4 +1,4 @@
-package com.foneloan.ecompass.domain;
+package com.otc.domain;
 
 public enum EcomPassState {
     CREATED,
